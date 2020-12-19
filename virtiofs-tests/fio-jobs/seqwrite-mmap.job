@@ -1,0 +1,8 @@
+[global]
+name=fio-mmap
+filename=fio-file1
+rw=write
+ioengine=mmap
+
+[seqwrite-mmap]
+filename=fio-file1
