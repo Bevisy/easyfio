@@ -58,14 +58,14 @@ Usage: $cmd: [OPTIONS] <name> <test-directory> <fio-job> ....
 Run fio tests
 
 Options:
-  -h | --help		Print help message
-  --runtime		Time in seconds for which each job should run. Default                          is 30 seconds.
-  --loops		Number of times each job is run. Default is 3.
-  --iodepth		Number of I/O units to keep in flight. Default is 16.
-  --size		Total size of file. Default is 4G.
-  --direct		If set to 1, use non-buffered I/O. Default is 0.
-  --blocksize		Specify blocksize. Default is 4K.
-  -c | --createfile	Setup new file on each run. Remove existing file.
+  -h | --help		       Print help message
+  --runtime		         Time in seconds for which each job should run. Default is 30 seconds.
+  --loops		           Number of times each job is run. Default is 3.
+  --iodepth		         Number of I/O units to keep in flight. Default is 16.
+  --size		           Total size of file. Default is 4G.
+  --direct	      	   If set to 1, use non-buffered I/O. Default is 0.
+  --blocksize	       	 Specify blocksize. Default is 4K.
+  -c | --createfile	   Setup new file on each run. Remove existing file.
 FOE
 }
 
