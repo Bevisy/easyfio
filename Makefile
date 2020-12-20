@@ -19,7 +19,7 @@ prepare:
 	echo "TODO"
 
 build-image:
-	docker build $(LIBRARY)/$(USER_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION) -f Dockerfile
+	docker build -t $(LIBRARY)/$(USER_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION) -f Dockerfile .
 
 push:
 	docker push $(LIBRARY)/$(USER_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION)
