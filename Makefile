@@ -12,7 +12,7 @@ FIO_TESTS_DIR = "virtiofs-tests"
 
 run: prepare
 	# excute fio tests
-	# example: ./run-fio-tests.sh test01 testDir/ testConfig/* | tee fio-tests-test01.txt
+	# example: ./run-fio-test.sh test01 testDir/ testConfig/* | tee fio-tests-test01.txt
 	$(FIO_TEST_DIR)/run-fio-test.sh
 
 prepare:
