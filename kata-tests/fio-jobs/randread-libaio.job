@@ -1,5 +1,5 @@
 [global]
-name=fio-mmap
+name=fio-job
 filename=fio-file1
 rw=randread
 ioengine=libaio

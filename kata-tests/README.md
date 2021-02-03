@@ -12,4 +12,4 @@ A placeholder for kata-containers tests
 - ./run-fio-test.sh $TESTNAME $TESTDIR fio-jobs/* --size="4k" --iodepth="1" > fio-results-$TESTNAME-4k-1.txt
 
 # Parse Results
-- ./parse-fio-results fio-results-$TESTNAME-4k-1.txt
+- for i in $(ls results);do ./parse-fio-results.sh results/$i;done

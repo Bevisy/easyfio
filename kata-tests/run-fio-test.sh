@@ -7,7 +7,7 @@ RUNTIME=60
 LOOPS=3
 IODEPTH=16
 SIZE="4G"
-DIRECT=0
+DIRECT=1
 BLOCKSIZE="4K"
 NUMJOBS=1
 
@@ -64,7 +64,7 @@ Options:
   --loops		         Number of times each job is run. Default is 3.
   --iodepth		         Number of I/O units to keep in flight. Default is 16.
   --size		         Total size of file. Default is 4G.
-  --direct	      	     If set to 1, use non-buffered I/O. Default is 0.
+  --direct	      	     If set to 1, use non-buffered I/O. Default is 1.
   --blocksize	       	 Specify blocksize. Default is 4K.
   --numjobs              Specify numjobs. Default is 1.
   -c | --createfile	     Setup new file on each run. Remove existing file.
@@ -82,7 +82,7 @@ if [ $# -lt 3 ];then
 fi
 
 # Parse options
-OPTS=`getopt -o h -l help -l runtime: -l loops: -l iodepth: -l size: -l direct: -l blocksize: -l numjobs:-o c -l createfile -- $@`
+OPTS=`getopt -o h -l help -l runtime: -l loops: -l iodepth: -l size: -l direct: -l blocksize: -l numjobs: -o c -l createfile -- $@`
 eval set -- "$OPTS"
 while true; do
   case "$1" in
