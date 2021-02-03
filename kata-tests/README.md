@@ -8,8 +8,8 @@ A placeholder for kata-containers tests
 
 # Run Tests
 - cd kata-tests
-- Assumeing testdir is mounted at /test/ and config name is container 
-- ./run-fio-test.sh $TESTNAME $TESTDIR fio-jobs/* --size="4k" --iodepth="1" > fio-results-$TESTNAME-4k-1.txt
+- Assumeing testdir is mounted at ./test/ and config name is "container" 
+- ./kata-tests.sh
 
 # Parse Results
 - for i in $(ls results);do ./parse-fio-results.sh results/$i;done
