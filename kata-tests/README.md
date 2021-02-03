@@ -12,4 +12,4 @@ A placeholder for kata-containers tests
 - ./kata-tests.sh
 
 # Parse Results
-- for i in $(ls results);do ./parse-fio-results.sh results/$i;done
+- RESULTS=' ';for i in $(ls $RESULTS);do ./parse-fio-results.sh $RESULTS/$i;done
