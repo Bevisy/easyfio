@@ -59,7 +59,7 @@ Run fio tests
 
 Options:
   -h | --help		       Print help message
-  --runtime		         Time in seconds for which each job should run. Default is 30 seconds.
+  --runtime		         Time in seconds for which each job should run. Default is 20 seconds.
   --loops		           Number of times each job is run. Default is 3.
   --iodepth		         Number of I/O units to keep in flight. Default is 16.
   --size		           Total size of file. Default is 4G.
