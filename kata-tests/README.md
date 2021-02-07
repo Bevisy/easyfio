@@ -1,4 +1,4 @@
-# virtiofs-tests
+# kata-containers-tests
 A placeholder for kata-containers tests
 
 # Setup Environment
