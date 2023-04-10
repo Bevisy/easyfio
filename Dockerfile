@@ -1,6 +1,7 @@
-FROM docker.io/library/centos:7
+FROM docker.io/library/ubuntu:22.04
 
 # Build with essential tools.
-RUN yum makecache && \
-    yum install fio vim curl wget git -y && \
-    yum clean all
+RUN apt update -y && \
+    apt install fio vim curl wget git -y && \
+    apt clean all
+ADD kata-tests /root/
