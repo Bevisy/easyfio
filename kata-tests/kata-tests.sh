@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TESTNAME="container"  # container/host
-TESTDIR="test/"      # 测试指定的文件目录
+TESTNAME=${TESTNAME:-container}  # container/host
+TESTDIR=${TESTDIR:-test/}      # 测试指定的文件目录
 
 # 结果存放位置
 mkdir -p results
